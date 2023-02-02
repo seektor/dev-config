@@ -1,9 +1,3 @@
-## ✨ Features
-
-# ANother One
-
-### Smallest
-
 # Keymaps
 
 ## General
@@ -23,3 +17,12 @@ Split window horizontally: <kbd>Leader</kbd> <kbd>-</kbd>
 Make split windows equal width & height: <kbd>Leader</kbd> <kbd>s</kbd> <kbd>e</kbd>
 
 Close current split window: <kbd>Leader</kbd> <kbd>s</kbd> <kbd>x</kbd>
+
+## Nvim-tree
+
+Toggle file explorer <kbd>Leader</kbd> <kbd>e</kbd>
+
+# Features
+
+- Colorscheme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
+- File explorer [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
