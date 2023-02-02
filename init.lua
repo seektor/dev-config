@@ -1,2 +1,3 @@
-require("sektor.core.options")
-require("sektor.core.keymaps")
+require("plugins")
+require("core.options")
+require("core.keymaps")
