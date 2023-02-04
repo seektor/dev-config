@@ -26,3 +26,4 @@ Toggle file explorer <kbd>Leader</kbd> <kbd>e</kbd>
 
 - Colorscheme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
 - File explorer [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+- Windows navigation [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
