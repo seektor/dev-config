@@ -69,6 +69,11 @@ return require("packer").startup(function(use)
 	-- displaying function signatures with the current parameter emphasized
 	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
+	-- terminal
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+		require("toggleterm").setup()
+	  end}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
