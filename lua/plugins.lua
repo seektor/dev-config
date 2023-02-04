@@ -38,8 +38,15 @@ return require("packer").startup(function(use)
     -- packer can manage itself
     use("wbthomason/packer.nvim")
 
+	-- functions for other plugins
+	use("nvim-lua/plenary.nvim")
+
      -- preferred colorscheme
 	use("Mofiqul/vscode.nvim")
+
+	-- fuzzy finder
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use({ "nvim-telescope/telescope.nvim", branch = '0.1.x' })
 
 	-- file explorer
 	use {

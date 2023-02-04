@@ -30,7 +30,19 @@ Close completion suggestions: <kbd>Leader</kbd> <kbd>e</kbd>
 
 ## Toggleterm
 
-Open/Close terminal: <kbd>Leader</kbd> <kbd>tr</kbd>
+Open/Close terminal: <kbd>Leader</kbd> <kbd>t</kbd> <kbd>r</kbd>
+
+## Telescope
+
+Find files: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>f</kbd>
+
+Find string by typing in the cwd: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>s</kbd>
+
+Find string under cursor in the cwd: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>c</kbd>
+
+List open buffers: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>b</kbd>
+
+List available help tags: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>h</kbd>
 
 # Features
 
@@ -42,3 +54,4 @@ Open/Close terminal: <kbd>Leader</kbd> <kbd>tr</kbd>
 - Terminal [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - Treesitter [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - LSP [nvim-lsp](https://github.com/neovim/nvim-lspconfig)
+- Fuzzy finder [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
