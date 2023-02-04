@@ -40,3 +40,4 @@ Open/Close terminal: <kbd>Leader</kbd> <kbd>t</kbd>
 - Statusbar [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - Autocompletion [cmp](https://github.com/hrsh7th/nvim-cmp)
 - Terminal [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- Treesitter [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
