@@ -66,18 +66,27 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-buffer")
 	-- source for file system paths
 	use("hrsh7th/cmp-path")
+	-- source for lsp
+	use("hrsh7th/cmp-nvim-lsp")
 	-- displaying function signatures with the current parameter emphasized
 	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
-	-- terminal
-	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-		require("toggleterm").setup()
-	  end}
+	-- managing lsp servers, linters & formatters
+	use("williamboman/mason.nvim") 
+	use("williamboman/mason-lspconfig.nvim")
+	use("neovim/nvim-lspconfig")
+	-- vs-code like icons for autocompletion
+	use("onsails/lspkind.nvim")
 
 	-- treesitter
 	use {"nvim-treesitter/nvim-treesitter",
 		run = ':TSUpdate'
 	}
+
+	-- terminal
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+		require("toggleterm").setup()
+	  end}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

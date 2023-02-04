@@ -19,6 +19,7 @@ treesitter.setup({
     "css",
     "markdown",
     "lua",
+    "vim",
     "dockerfile",
     "gitignore",
   },

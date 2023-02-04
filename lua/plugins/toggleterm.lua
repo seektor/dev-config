@@ -7,7 +7,7 @@ toggleterm.setup({
     shade_terminals = false,
 })
 
-vim.keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
+vim.keymap.set("n", "<leader>tr", ":ToggleTerm<CR>")
 
 function _G.set_terminal_keymaps()
     local opts = {buffer = 0}

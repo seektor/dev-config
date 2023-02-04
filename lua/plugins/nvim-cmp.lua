@@ -3,6 +3,11 @@ if not cmp_status then
 	return
 end
 
+local lspkind_status, lspkind = pcall(require, "lspkind")
+if not lspkind_status then
+	return
+end
+
 vim.opt.completeopt = "menu,menuone,noselect"
 
 cmp.setup({
@@ -17,6 +22,8 @@ cmp.setup({
 	}),
 	-- sources for autocompletion
 	sources = cmp.config.sources({
+		{ name = "nvim_lsp" },
+		{ name = "nvim_lsp_signature_help" }, -- function parameters
 		{
 			name = "buffer",
 			option = {
@@ -29,8 +36,13 @@ cmp.setup({
 					return { buf }
 				end,
 			},
-		}, -- text within current buffer
-		{ name = "nvim_lsp_signature_help" }, -- function parameters
+		},
 		{ name = "path" }, -- file system paths
 	}),
+	formatting = {
+		format = lspkind.cmp_format({
+			maxwidth = 50,
+			ellipsis_char = "...",
+		}),
+	},
 })

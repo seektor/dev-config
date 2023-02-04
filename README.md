@@ -30,7 +30,7 @@ Close completion suggestions: <kbd>Leader</kbd> <kbd>e</kbd>
 
 ## Toggleterm
 
-Open/Close terminal: <kbd>Leader</kbd> <kbd>t</kbd>
+Open/Close terminal: <kbd>Leader</kbd> <kbd>tr</kbd>
 
 # Features
 
@@ -41,3 +41,4 @@ Open/Close terminal: <kbd>Leader</kbd> <kbd>t</kbd>
 - Autocompletion [cmp](https://github.com/hrsh7th/nvim-cmp)
 - Terminal [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - Treesitter [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- LSP [nvim-lsp](https://github.com/neovim/nvim-lspconfig)
