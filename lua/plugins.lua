@@ -59,6 +59,16 @@ return require("packer").startup(function(use)
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	  }
 
+	-- autocompletion
+	-- completion plugin
+	use("hrsh7th/nvim-cmp")
+	-- source for text in buffer
+	use("hrsh7th/cmp-buffer")
+	-- source for file system paths
+	use("hrsh7th/cmp-path")
+	-- displaying function signatures with the current parameter emphasized
+	use("hrsh7th/cmp-nvim-lsp-signature-help")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
