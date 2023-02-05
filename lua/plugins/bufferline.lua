@@ -10,7 +10,6 @@ if not vc_status then
 
 local c = vc.get_colors()
 local white_color = "#FFFFFF"
-local light_gray_color = "#969696"
 
 vim.opt.termguicolors = true
 

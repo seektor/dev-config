@@ -8,6 +8,7 @@ require("plugins.nvim-cmp")
 require("plugins.lsp.mason")
 require("plugins.lsp.mason-lspconfig")
 require("plugins.lsp.lspconfig")
+require("plugins.lsp.lspsaga");
 require("plugins.treesitter")
 require("plugins.toggleterm")
 require("plugins.telescope")

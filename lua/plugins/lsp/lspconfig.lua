@@ -16,9 +16,13 @@ local on_attach = function(client, bufnr)
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
 
-  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts) -- show code actions
-  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<leader>rf', vim.lsp.buf.references, bufopts)
+  -- see available code actions
+  keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
+  -- show definition, references
+  keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts)
+  -- vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts) -- show code actions
+  -- vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
+  -- vim.keymap.set('n', '<leader>rf', vim.lsp.buf.references, bufopts)
 --   keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
 --   keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
 --   keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation

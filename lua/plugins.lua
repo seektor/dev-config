@@ -90,10 +90,14 @@ return require("packer").startup(function(use)
 		run = ':TSUpdate'
 	}
 
+	-- lsp ui
+	use {
+		"glepnir/lspsaga.nvim",
+		branch = "main"
+	}
+
 	-- terminal
-	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-		require("toggleterm").setup()
-	  end}
+	use {"akinsho/toggleterm.nvim", tag = '*'}
 
 	-- comments
 	use("numToStr/Comment.nvim")

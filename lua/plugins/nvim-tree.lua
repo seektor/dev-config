@@ -10,15 +10,17 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
--- change color for folders in tree to yellowish (vs-code like)
-vim.cmd([[ highlight NvimTreeOpenedFolderIcon guifg=#D6B682 ]])
-vim.cmd([[ highlight NvimTreeClosedFolderIcon guifg=#D6B682 ]])
-vim.cmd([[ highlight NvimTreeNormal guibg=#252526 ]])
-
 local vc_status, vc = pcall(require, 'vscode.colors')
 if not vc_status then
     return
   end
+local c = vc.get_colors()
+
+-- change color for folders in tree to yellowish (vs-code like)
+vim.api.nvim_set_hl(0, 'NvimTreeOpenedFolderIcon', { fg = '#D6B682' })
+vim.api.nvim_set_hl(0, 'NvimTreeClosedFolderIcon', { fg = '#D6B682' })
+
+vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = c.vscLeftDark })
 
 nvimtree.setup({
   hijack_cursor = true,

@@ -58,6 +58,8 @@ TODO...
 
 TODO...
 
+## Lspsaga
+
 # Features
 
 - Colorscheme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
@@ -72,6 +74,7 @@ TODO...
 - Comments [comment.nvim](https://github.com/numToStr/Comment.nvim)
 - Surround [vim-surround](https://github.com/tpope/vim-surround)
 - Tabs [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- Lsp Saga [lspsaga.nvim]()
 
 # Issues
 
