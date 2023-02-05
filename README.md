@@ -54,6 +54,10 @@ Toggles the current line using blockwise comment: <kbd>g</kbd> <kbd>b</kbd> <kbd
 
 TODO...
 
+## Bufferline
+
+TODO...
+
 # Features
 
 - Colorscheme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
@@ -67,3 +71,8 @@ TODO...
 - Fuzzy finder [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - Comments [comment.nvim](https://github.com/numToStr/Comment.nvim)
 - Surround [vim-surround](https://github.com/tpope/vim-surround)
+- Tabs [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+
+# Issues
+
+Lualine redraws screen and because of that the intro screen dissapears: [issue](https://github.com/nvim-lualine/lualine.nvim/issues/733)
