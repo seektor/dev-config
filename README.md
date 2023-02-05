@@ -44,6 +44,12 @@ List open buffers: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>b</kbd>
 
 List available help tags: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>h</kbd>
 
+## Comment
+
+Toggles the current line using linewise comment: <kbd>g</kbd> <kbd>c</kbd> <kbd>c</kbd>
+
+Toggles the current line using blockwise comment: <kbd>g</kbd> <kbd>b</kbd> <kbd>c</kbd>
+
 # Features
 
 - Colorscheme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
@@ -55,3 +61,4 @@ List available help tags: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>h</kbd>
 - Treesitter [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - LSP [nvim-lsp](https://github.com/neovim/nvim-lspconfig)
 - Fuzzy finder [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- Comments [comment.nvim](https://github.com/numToStr/Comment.nvim)

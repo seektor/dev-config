@@ -79,7 +79,7 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
 	-- managing lsp servers, linters & formatters
-	use("williamboman/mason.nvim") 
+	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
 	use("neovim/nvim-lspconfig")
 	-- vs-code like icons for autocompletion
@@ -94,6 +94,9 @@ return require("packer").startup(function(use)
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 		require("toggleterm").setup()
 	  end}
+
+	-- comments
+	use("numToStr/Comment.nvim")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
