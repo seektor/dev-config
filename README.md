@@ -75,6 +75,7 @@ TODO...
 - Surround [vim-surround](https://github.com/tpope/vim-surround)
 - Tabs [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - Lsp Saga [lspsaga.nvim]()
+- Formatting and linting [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)
 
 # Issues
 

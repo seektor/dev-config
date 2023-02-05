@@ -35,36 +35,36 @@ packer.init({
 })
 
 return require("packer").startup(function(use)
-    -- packer can manage itself
-    use("wbthomason/packer.nvim")
+	-- packer can manage itself
+	use("wbthomason/packer.nvim")
 
 	-- functions for other plugins
 	use("nvim-lua/plenary.nvim")
 
-     -- preferred colorscheme
+	-- preferred colorscheme
 	use("Mofiqul/vscode.nvim")
 
 	-- fuzzy finder
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-	use({ "nvim-telescope/telescope.nvim", branch = '0.1.x' })
+	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 
 	-- file explorer
-	use {
-		'nvim-tree/nvim-tree.lua',
+	use({
+		"nvim-tree/nvim-tree.lua",
 		requires = {
-		  'nvim-tree/nvim-web-devicons', -- optional, for file icons
+			"nvim-tree/nvim-web-devicons", -- optional, for file icons
 		},
-		tag = 'nightly' -- optional, updated every week. (see issue #1193)
-	  }
+		tag = "nightly", -- optional, updated every week. (see issue #1193)
+	})
 
 	-- windows navigation
 	use("christoomey/vim-tmux-navigator")
 
 	-- statusline
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-	  }
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 
 	-- autocompletion
 	-- completion plugin
@@ -84,20 +84,18 @@ return require("packer").startup(function(use)
 	use("neovim/nvim-lspconfig")
 	-- vs-code like icons for autocompletion
 	use("onsails/lspkind.nvim")
+	-- configure formatters & linters
+	use("jose-elias-alvarez/null-ls.nvim")
+	use("jayp0521/mason-null-ls.nvim")
 
 	-- treesitter
-	use {"nvim-treesitter/nvim-treesitter",
-		run = ':TSUpdate'
-	}
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
 	-- lsp ui
-	use {
-		"glepnir/lspsaga.nvim",
-		branch = "main"
-	}
+	use({ "glepnir/lspsaga.nvim", branch = "main" })
 
 	-- terminal
-	use {"akinsho/toggleterm.nvim", tag = '*'}
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
 
 	-- comments
 	use("numToStr/Comment.nvim")
@@ -106,7 +104,7 @@ return require("packer").startup(function(use)
 	use("tpope/vim-surround")
 
 	-- tabs
-	use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
