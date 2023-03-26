@@ -31,6 +31,8 @@ colorschema.setup({
     group_overrides = {
         -- this supports the same val table as vim.api.nvim_set_hl
         -- use colors from this colorscheme by requiring vscode.colors!
-        ['@type.builtin'] = { fg = c.vscBlueGreen, bg = 'NONE' },
+        -- ['@type.builtin'] = { fg = c.vscBlueGreen, bg = 'NONE' },
     },
 })
+
+colorschema.load()

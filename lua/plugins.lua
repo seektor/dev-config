@@ -103,6 +103,9 @@ return require("packer").startup(function(use)
 	-- change surroundings, quotes etc
 	use("tpope/vim-surround")
 
+	-- auto closing parens, brackets etc.
+	use("windwp/nvim-autopairs")
+
 	-- tabs
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
