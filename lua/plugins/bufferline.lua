@@ -66,5 +66,8 @@ bufferline.setup({
             fg = { attribute = "fg", highlight = "Normal" },
             bg = { attribute = "bg", highlight = "Normal" },
         },
+        modified = {
+            bg = { attribute = "bg", highlight = "StatusLine" },
+        },
     },
 })
