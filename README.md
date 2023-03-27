@@ -64,6 +64,12 @@ TODO...
 
 ## Lspsaga
 
+TODO...
+
+## Gitsigns
+
+TODO...
+
 # Features
 
 - Colorscheme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)

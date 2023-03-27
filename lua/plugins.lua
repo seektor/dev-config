@@ -109,6 +109,11 @@ return require("packer").startup(function(use)
 	-- tabs
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
+	-- git markers
+	use({
+		"lewis6991/gitsigns.nvim",
+	})
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

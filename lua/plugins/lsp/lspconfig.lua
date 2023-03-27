@@ -20,14 +20,13 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
 	-- show definition, references
 	keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts)
-	-- vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts) -- show code actions
 	-- vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
 	-- vim.keymap.set('n', '<leader>rf', vim.lsp.buf.references, bufopts)
 	--   keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
 	--   keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
 	--   keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
 	--   keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
-	--   keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
+	  keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
 	--   keymap.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
 	--   keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
 	--   keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
