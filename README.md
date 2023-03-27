@@ -1,5 +1,9 @@
 # Keymaps
 
+## Tmux
+
+[Cheatsheet](https://tmuxcheatsheet.com/)
+
 ## General
 
 Leader: <kbd>Space</kbd>
