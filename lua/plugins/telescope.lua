@@ -16,6 +16,9 @@ telescope.setup({
         ["<C-j>"] = actions.move_selection_next, -- move to next result
       },
     },
+    file_ignore_patterns = { 
+      "node_modules" 
+    }
   },
 })
 
