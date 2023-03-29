@@ -65,12 +65,12 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
-keymap.set('n', 'T,', '<Cmd>BufferLineCyclePrev<CR>', opts)
-keymap.set('n', 'T.', '<Cmd>BufferLineCycleNext<CR>', opts)
+keymap.set('n', 'Tn', '<Cmd>BufferLineCyclePrev<CR>', opts)
+keymap.set('n', 'TN', '<Cmd>BufferLineCycleNext<CR>', opts)
 
 -- Move previous/next
-keymap.set('n', 'T<', '<Cmd>BufferLineMovePrev<CR>', opts)
-keymap.set('n', 'T>', '<Cmd>BufferLineMoveNext<CR>', opts)
+keymap.set('n', 'Tm', '<Cmd>BufferLineMovePrev<CR>', opts)
+keymap.set('n', 'TM', '<Cmd>BufferLineMoveNext<CR>', opts)
 
 -- Close
 keymap.set('n', 'Tc', '<Cmd>BufferClose<CR>', opts)
