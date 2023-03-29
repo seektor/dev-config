@@ -60,3 +60,23 @@ bufferline.setup({
         },
     },
 })
+
+local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
+
+-- Move to previous/next
+keymap.set('n', 'T,', '<Cmd>BufferLineCyclePrev<CR>', opts)
+keymap.set('n', 'T.', '<Cmd>BufferLineCycleNext<CR>', opts)
+
+-- Move previous/next
+keymap.set('n', 'T<', '<Cmd>BufferLineMovePrev<CR>', opts)
+keymap.set('n', 'T>', '<Cmd>BufferLineMoveNext<CR>', opts)
+
+-- Close
+keymap.set('n', 'Tc', '<Cmd>BufferClose<CR>', opts)
+
+-- Goto
+keymap.set('n', 'T1', '<Cmd>BufferGoto 1<CR>', opts)
+keymap.set('n', 'T2', '<Cmd>BufferGoto 2<CR>', opts)
+keymap.set('n', 'T3', '<Cmd>BufferGoto 3<CR>', opts)
+keymap.set('n', 'T4', '<Cmd>BufferGoto 4<CR>', opts)
