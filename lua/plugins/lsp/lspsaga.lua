@@ -5,7 +5,7 @@ end
 
 local c = require('vscode.colors').get_colors()
 
-vim.api.nvim_set_hl(0, 'LspSagaWinbarSep', { fg = c.vscLineNumber })
+vim.api.nvim_set_hl(0, 'SagaWinbarSep', { fg = c.vscLineNumber })
 vim.api.nvim_set_hl(0, 'SagaNormal', { bg = c.vscLeftDark})
 -- vim.api.nvim_set_hl(0, 'SagaBorder', { fg = c.vscLeftDark})
 
@@ -23,7 +23,7 @@ saga.setup({
   },
   symbol_in_winbar = {
     -- enable = true,
-    separator = " ⏵ ",
+    separator = " > ",
     -- color_mode = true,
   },
 })
