@@ -9,7 +9,7 @@ require("plugins.lsp.mason")
 require("plugins.lsp.mason-lspconfig")
 require("plugins.lsp.mason-null-ls")
 require("plugins.lsp.lspconfig")
-require("plugins.lsp.lspsaga");
+require("plugins.lsp.lspsaga")
 require("plugins.lsp.null-ls")
 require("plugins.treesitter")
 require("plugins.toggleterm")

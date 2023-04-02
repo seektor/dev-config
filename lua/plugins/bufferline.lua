@@ -13,6 +13,7 @@ vim.opt.termguicolors = true
 bufferline.setup({
 	options = {
 		show_close_icon = false,
+		diagnostics = "nvim_lsp",
 	},
 	highlights = {
 		fill = {
