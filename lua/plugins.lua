@@ -34,7 +34,7 @@ packer.init({
 	},
 })
 
-return require("packer").startup(function(use)
+return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
@@ -84,6 +84,8 @@ return require("packer").startup(function(use)
 	use("neovim/nvim-lspconfig")
 	-- vs-code like icons for autocompletion
 	use("onsails/lspkind.nvim")
+	-- rust tools
+	use("simrat39/rust-tools.nvim")
 	-- configure formatters & linters
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
