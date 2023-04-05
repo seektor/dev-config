@@ -26,4 +26,7 @@ saga.setup({
     separator = " > ",
     -- color_mode = true,
   },
+  lightbulb = {
+    virtual_text = false,
+  },
 })
