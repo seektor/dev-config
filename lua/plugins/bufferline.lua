@@ -66,18 +66,18 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- Move to previous/next
-keymap.set("n", "Tn", "<Cmd>BufferLineCyclePrev<CR>", opts)
-keymap.set("n", "TN", "<Cmd>BufferLineCycleNext<CR>", opts)
+keymap.set("n", "<leader>tn", "<Cmd>BufferLineCyclePrev<CR>", opts)
+keymap.set("n", "<leader>tN", "<Cmd>BufferLineCycleNext<CR>", opts)
 
 -- Move previous/next
-keymap.set("n", "Tm", "<Cmd>BufferLineMovePrev<CR>", opts)
-keymap.set("n", "TM", "<Cmd>BufferLineMoveNext<CR>", opts)
+keymap.set("n", "<leader>tm", "<Cmd>BufferLineMovePrev<CR>", opts)
+keymap.set("n", "<leader>tM", "<Cmd>BufferLineMoveNext<CR>", opts)
 
 -- Close
-keymap.set("n", "Tc", "<Cmd>bd<CR>", opts)
+keymap.set("n", "<leader>tc", "<Cmd>bd<CR>", opts)
 
 -- Goto
-keymap.set("n", "T1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
-keymap.set("n", "T2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
-keymap.set("n", "T3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
-keymap.set("n", "T4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+keymap.set("n", "<leader>t1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+keymap.set("n", "<leader>t2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+keymap.set("n", "<leader>t3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+keymap.set("n", "<leader>t4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
