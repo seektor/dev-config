@@ -14,6 +14,9 @@ opt.expandtab = true
 -- copy indent from current line to new one
 opt.autoindent = true
 
+-- make 8 lines from the top always visible
+opt.scrolloff = 8
+
 -- disable line wrapping
 opt.wrap = false
 

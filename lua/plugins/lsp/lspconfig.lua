@@ -61,7 +61,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>")
 
 	-- Go to type definition
-	keymap.set("n", "gt", "<cmd>Lspsaga goto_type_definition<CR>")
+	-- keymap.set("n", "gt", "<cmd>Lspsaga goto_type_definition<CR>")
 
 	-- Show line diagnostics
 	-- You can pass argument ++unfocus to
