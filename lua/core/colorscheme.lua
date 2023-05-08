@@ -6,8 +6,6 @@ if not status then
 	return
 end
 
-local c = require("vscode.colors").get_colors()
-
 colorschema.setup({
 	italic_comments = true,
 	disable_nvimtree_bg = true,
