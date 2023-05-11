@@ -10,7 +10,6 @@ end
 
 vim.api.nvim_set_hl(0, "SagaWinbarSep", { fg = vc.vscLineNumber })
 vim.api.nvim_set_hl(0, "SagaNormal", { bg = vc.vscLeftDark })
--- vim.api.nvim_set_hl(0, 'SagaBorder', { fg = c.vscLeftDark})
 
 saga.setup({
 	scroll_preview = { scroll_down = "<C-f>", scroll_up = "<C-b>" },
@@ -18,18 +17,22 @@ saga.setup({
 	definition = {
 		edit = "<CR>",
 	},
-	ui = {
-		-- border = 'single',
-		colors = {
-			normal_bg = "#ff0000",
-		},
-	},
 	symbol_in_winbar = {
-		-- enable = true,
 		separator = " > ",
-		-- color_mode = true,
 	},
 	lightbulb = {
 		virtual_text = false,
 	},
+	finder = {
+		keys = {
+		  jump_to = 'p',
+		  expand_or_jump = '<CR>',
+		  vsplit = '|',
+		  split = '-',
+		  tabe = 't',
+		  tabnew = 'r',
+		  quit = { 'q', '<ESC>' },
+		  close_in_preview = '<ESC>',
+		},
+	  },
 })

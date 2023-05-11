@@ -32,7 +32,7 @@ local on_attach = function(client, bufnr)
 	-- If there is no definition, it will instead be hidden
 	-- When you use an action in finder like "open vsplit",
 	-- you can use <C-t> to jump back
-	keymap.set("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
+	keymap.set("n", "<leader>fd", "<cmd>Lspsaga lsp_finder<CR>")
 
 	-- Code action
 	keymap.set({ "n", "v" }, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
@@ -40,25 +40,22 @@ local on_attach = function(client, bufnr)
 	-- Rename all occurrences of the hovered word for the entire file
 	keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>")
 
-	-- Rename all occurrences of the hovered word for the selected files
-	keymap.set("n", "gr", "<cmd>Lspsaga rename ++project<CR>")
-
 	-- Peek definition
 	-- You can edit the file containing the definition in the floating window
 	-- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
 	-- It also supports tagstack
 	-- Use <C-t> to jump back
-	keymap.set("n", "gp", "<cmd>Lspsaga peek_definition<CR>")
+	keymap.set("n", "<leader>pd", "<cmd>Lspsaga peek_definition<CR>")
 
 	-- Go to definition
-	keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
+	keymap.set("n", "<leader>gd", "<cmd>Lspsaga goto_definition<CR>")
 
 	-- Peek type definition
 	-- You can edit the file containing the type definition in the floating window
 	-- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
 	-- It also supports tagstack
 	-- Use <C-t> to jump back
-	keymap.set("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>")
+	-- keymap.set("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>")
 
 	-- Go to type definition
 	-- keymap.set("n", "gt", "<cmd>Lspsaga goto_type_definition<CR>")
@@ -99,7 +96,7 @@ local on_attach = function(client, bufnr)
 	-- there is no information available.
 	-- To disable it just use ":Lspsaga hover_doc ++quiet"
 	-- Pressing the key twice will enter the hover window
-	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+	keymap.set("n", "<leader>H", "<cmd>Lspsaga hover_doc<CR>")
 
 	-- typescript specific keymaps (e.g. rename file and update imports)
 	--   if client.name == "tsserver" then
