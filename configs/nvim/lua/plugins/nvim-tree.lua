@@ -32,8 +32,7 @@ nvimtree.setup({
     width = 40,
     side = 'right',
   },
-  renderer = {
-    highlight_opened_files = 'all',
+  renderer = {   
     root_folder_label = function(path)
       print(path)
       return ".../" .. vim.fn.fnamemodify(path, ":t")
@@ -50,6 +49,8 @@ nvimtree.setup({
 })
 
 local keymap = vim.keymap
+
+-- https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 
 -- toggle file explorer
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") 
