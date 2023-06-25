@@ -78,6 +78,10 @@ return packer.startup(function(use)
 	-- displaying function signatures with the current parameter emphasized
 	use("hrsh7th/cmp-nvim-lsp-signature-help")
 
+	-- snippets
+	-- snippet engine
+	use("L3MON4D3/LuaSnip")
+
 	-- managing lsp servers, linters & formatters
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
