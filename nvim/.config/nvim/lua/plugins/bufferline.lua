@@ -83,7 +83,7 @@ keymap.set("n", "<leader>tm", "<Cmd>BufferLineMoveNext<CR>", opts)
 keymap.set("n", "<leader>to", "<Cmd>BufferLineMovePrev<CR>", opts)
 
 -- Close
-keymap.set("n", "<leader>tq", "<Cmd>bd<CR>", opts)
+keymap.set("n", "<leader>tx", "<Cmd>bd<CR>", opts)
 -- Close to the right
 keymap.set("n", "<leader>tM", "<Cmd>BufferLineCloseRight<CR>", opts)
 keymap.set("n", "<leader>tO", "<Cmd>BufferLineCloseRight<CR>", opts)
