@@ -81,6 +81,8 @@ return packer.startup(function(use)
 	-- snippets
 	-- snippet engine
 	use("L3MON4D3/LuaSnip")
+	-- autocompletion
+	use("saadparwaiz1/cmp_luasnip")
 
 	-- managing lsp servers, linters & formatters
 	use("williamboman/mason.nvim")

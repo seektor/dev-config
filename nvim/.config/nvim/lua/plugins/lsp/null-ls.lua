@@ -21,6 +21,8 @@ null_ls.setup({
       formatting.prettier,
       -- lua formatter
       formatting.stylua,
+      -- rust
+      formatting.rustfmt,
       -- js/ts linter
       diagnostics.eslint_d.with({
         -- only enable eslint if root has .eslintrc.js
