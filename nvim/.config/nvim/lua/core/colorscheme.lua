@@ -1,14 +1,13 @@
 vim.o.background = "dark"
 
-local status, colorschema = pcall(require, "vscode")
-if not status then
-	print("Colorscheme not found!")
-	return
-end
+local vscode = require('vscode')
 
-colorschema.setup({
+vscode.setup({
 	italic_comments = true,
 	disable_nvimtree_bg = true,
+	color_overrides = {
+		vscLineNumber = '#858585'
+	}
 })
 
-colorschema.load()
+vscode.load()

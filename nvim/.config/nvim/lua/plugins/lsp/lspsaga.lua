@@ -1,15 +1,9 @@
-local saga_status, saga = pcall(require, "lspsaga")
-if not saga_status then
-	return
-end
+local saga = require('lspsaga')
+local colors = require('vscode.colors').get_colors();
 
-local vc_status, vc = pcall(require, "vscode.colors")
-if not vc_status then
-	return
-end
-
-vim.api.nvim_set_hl(0, "SagaWinbarSep", { fg = vc.vscLineNumber })
-vim.api.nvim_set_hl(0, "SagaNormal", { bg = vc.vscLeftDark })
+vim.api.nvim_set_hl(0, "SagaWinbarSep", { fg = colors.vscLineNumber })
+vim.api.nvim_set_hl(0, "SagaFileName", { fg = colors.vscLineNumber })
+vim.api.nvim_set_hl(0, "SagaFolderName", { fg = colors.vscLineNumber })
 
 saga.setup({
 	scroll_preview = { scroll_down = "<C-f>", scroll_up = "<C-b>" },

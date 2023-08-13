@@ -1,14 +1,6 @@
-local buffer_status, bufferline = pcall(require, "bufferline")
-if not buffer_status then
-	return
-end
-
-local vc_status, vc = pcall(require, "vscode.colors")
-if not vc_status then
-	return
-end
-
 vim.opt.termguicolors = true
+
+local bufferline = require('bufferline')
 
 bufferline.setup({
     options = {
