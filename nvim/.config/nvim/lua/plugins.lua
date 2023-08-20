@@ -108,9 +108,6 @@ return packer.startup(function(use)
 	-- comments
 	use("numToStr/Comment.nvim")
 
-	-- change surroundings, quotes etc
-	use("tpope/vim-surround")
-
 	-- auto closing parens, brackets etc.
 	use("windwp/nvim-autopairs")
 

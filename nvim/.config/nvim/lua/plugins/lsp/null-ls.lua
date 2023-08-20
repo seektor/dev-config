@@ -30,6 +30,8 @@ null_ls.setup({
           return utils.root_has_file(".eslintrc.js")
         end,
       }),
+      -- python
+      formatting.autopep8,
     },
     -- configure format on save
     on_attach = function(current_client, bufnr)
