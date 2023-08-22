@@ -71,15 +71,15 @@ keymap.set("n", "<leader>tn", "<Cmd>BufferLineCycleNext<CR>", opts)
 keymap.set("n", "<leader>tp", "<Cmd>BufferLineCyclePrev<CR>", opts)
 
 -- Move previous/next
-keymap.set("n", "<leader>tm", "<Cmd>BufferLineMoveNext<CR>", opts)
-keymap.set("n", "<leader>to", "<Cmd>BufferLineMovePrev<CR>", opts)
+keymap.set("n", "<leader>tN", "<Cmd>BufferLineMoveNext<CR>", opts)
+keymap.set("n", "<leader>tP", "<Cmd>BufferLineMovePrev<CR>", opts)
 
 -- Close
 keymap.set("n", "<leader>tx", "<Cmd>bd<CR>", opts)
 -- Close to the right
-keymap.set("n", "<leader>tM", "<Cmd>BufferLineCloseRight<CR>", opts)
+keymap.set("n", "<leader>txn", "<Cmd>BufferLineCloseRight<CR>", opts)
 -- Close to the left
-keymap.set("n", "<leader>tO", "<Cmd>BufferLineCloseLeft<CR>", opts)
+keymap.set("n", "<leader>txp", "<Cmd>BufferLineCloseLeft<CR>", opts)
 
 -- Goto
 keymap.set("n", "<leader>t0", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
