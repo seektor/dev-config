@@ -1,3 +1,12 @@
 comment = require('Comment')
 
-comment.setup()
+comment.setup({
+  toggler = {
+    line = '<leader>cc',
+    block = '<leader>cb',
+  },
+  opleader = {
+    line = '<leader>cc',
+    block = '<leader>cb',
+  },
+})
