@@ -100,7 +100,7 @@ return packer.startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
 	-- lsp ui
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use({ "nvimdev/lspsaga.nvim" })
 
 	-- terminal
 	use({ "akinsho/toggleterm.nvim", tag = "*" })

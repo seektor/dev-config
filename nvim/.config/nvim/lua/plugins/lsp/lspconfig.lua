@@ -24,41 +24,28 @@ local keymap = vim.keymap
 
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
-	-- Mappings.
-	-- See `:help vim.lsp.*` for documentation on any of the below functions
 	local bufopts = { noremap = true, silent = true, buffer = bufnr }
 
 	-- LSP finder - Find the symbol's definition
-	-- If there is no definition, it will instead be hidden
-	-- When you use an action in finder like "open vsplit",
-	-- you can use <C-t> to jump back
-	keymap.set("n", "<leader>fd", "<cmd>Lspsaga lsp_finder<CR>")
+	keymap.set("n", "<leader>fd", "<cmd>Lspsaga finder def+ref<CR>")
 
 	-- Code action
 	keymap.set({ "n", "v" }, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 
-	-- Rename all occurrences of the hovered word for the entire file
-	keymap.set("n", "gr", "<cmd>Lspsaga rename<CR>")
+	-- Rename all occurrences of the hovered word
+	keymap.set("n", "r", "<cmd>Lspsaga rename<CR>")
 
 	-- Peek definition
-	-- You can edit the file containing the definition in the floating window
-	-- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
-	-- It also supports tagstack
-	-- Use <C-t> to jump back
 	keymap.set("n", "<leader>pd", "<cmd>Lspsaga peek_definition<CR>")
 
 	-- Go to definition
 	keymap.set("n", "<leader>gd", "<cmd>Lspsaga goto_definition<CR>")
 
 	-- Peek type definition
-	-- You can edit the file containing the type definition in the floating window
-	-- It also supports open/vsplit/etc operations, do refer to "definition_action_keys"
-	-- It also supports tagstack
-	-- Use <C-t> to jump back
-	-- keymap.set("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>")
+	keymap.set("n", "<leader>ptd", "<cmd>Lspsaga peek_type_definition<CR>")
 
 	-- Go to type definition
-	-- keymap.set("n", "gt", "<cmd>Lspsaga goto_type_definition<CR>")
+	keymap.set("n", "<leader>gtd", "<cmd>Lspsaga goto_type_definition<CR>")
 
 	-- Show line diagnostics
 	-- You can pass argument ++unfocus to
@@ -76,14 +63,14 @@ local on_attach = function(client, bufnr)
 
 	-- Diagnostic jump
 	-- You can use <C-o> to jump back to your previous location
-	keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
-	keymap.set("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+	keymap.set("n", "<leader>[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
+	keymap.set("n", "<leader>]e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 
 	-- Diagnostic jump with filters such as only jumping to an error
-	keymap.set("n", "[E", function()
+	keymap.set("n", "<leader>[E", function()
 		require("lspsaga.diagnostic"):goto_prev({ severity = vim.diagnostic.severity.ERROR })
 	end)
-	keymap.set("n", "]E", function()
+	keymap.set("n", "<leader>]E", function()
 		require("lspsaga.diagnostic"):goto_next({ severity = vim.diagnostic.severity.ERROR })
 	end)
 
@@ -91,19 +78,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n","<leader>o", "<cmd>Lspsaga outline<CR>")
 
 	-- Hover Doc
-	-- If there is no hover doc,
-	-- there will be a notification stating that
-	-- there is no information available.
-	-- To disable it just use ":Lspsaga hover_doc ++quiet"
-	-- Pressing the key twice will enter the hover window
 	keymap.set("n", "<leader>h", "<cmd>Lspsaga hover_doc<CR>")
-
-	-- typescript specific keymaps (e.g. rename file and update imports)
-	--   if client.name == "tsserver" then
-	--     keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
-	--     keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
-	--     keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
-	--   end
 end
 
 -- enable autocompletion (assign to every lsp server config)
