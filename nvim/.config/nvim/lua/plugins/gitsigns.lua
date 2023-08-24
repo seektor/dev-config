@@ -1,4 +1,4 @@
-gitsigns = require('gitsigns')
+local gitsigns = require('gitsigns')
 
 gitsigns.setup({
   on_attach = function(bufnr)
@@ -24,11 +24,6 @@ gitsigns.setup({
     end, {expr=true})
 
     -- Actions
-    map('n', '<leader>hs', gs.stage_hunk)
-    map('n', '<leader>hr', gs.reset_hunk)
-    map('n', '<leader>hS', gs.stage_buffer)
-    map('n', '<leader>hu', gs.undo_stage_hunk)
-    map('n', '<leader>hR', gs.reset_buffer)
     map('n', '<leader>hp', gs.preview_hunk)
     map('n', '<leader>hb', function() gs.blame_line{full=true} end)
     map('n', '<leader>tb', gs.toggle_current_line_blame)

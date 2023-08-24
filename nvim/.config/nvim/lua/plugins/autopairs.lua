@@ -1,7 +1,4 @@
-local autopairs_status, autopairs = pcall(require, "nvim-autopairs")
-if not autopairs_status then
-  return
-end
+local autopairs = require("nvim-autopairs")
 
 autopairs.setup({
 -- enable treesitter
@@ -14,15 +11,8 @@ autopairs.setup({
   },
 })
 
-local cmp_autopairs_status, cmp_autopairs = pcall(require, "nvim-autopairs.completion.cmp")
-if not cmp_autopairs_status then
-  return
-end
-
-local cmp_setup, cmp = pcall(require, "cmp")
-if not cmp_setup then
-  return
-end
+local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+local cmp = require("cmp")
 
 -- make autopairs and completion work together
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
