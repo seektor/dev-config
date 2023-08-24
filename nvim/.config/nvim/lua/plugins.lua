@@ -122,6 +122,11 @@ return packer.startup(function(use)
 	-- vs code like diff view
 	use("sindrets/diffview.nvim")
 
+	use({
+		"glepnir/dashboard-nvim",
+		requires = { "nvim-tree/nvim-web-devicons" },
+	})
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
