@@ -33,7 +33,7 @@ local on_attach = function(client, bufnr)
 	keymap.set({ "n", "v" }, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 
 	-- Rename all occurrences of the hovered word
-	keymap.set("n", "r", "<cmd>Lspsaga rename<CR>")
+	keymap.set("n", "<leader>r", "<cmd>Lspsaga rename<CR>")
 
 	-- Peek definition
 	keymap.set("n", "<leader>pd", "<cmd>Lspsaga peek_definition<CR>")
