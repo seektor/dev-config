@@ -44,6 +44,17 @@ nvimtree.setup({
       show = {
         folder_arrow = false,
       },
+      glyphs = {
+        git = {
+          unstaged = "M",
+          staged = "S",
+          unmerged = "UM",
+          renamed = "R",
+          deleted = "D",
+          untracked = "UT",
+          ignored = "I",
+        },
+      },
     },
   },
 })
