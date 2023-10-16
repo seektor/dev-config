@@ -12,6 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- color theme
+  -- Theme
   "Mofiqul/vscode.nvim",
+
+  -- Dashboard
+  {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  }
 })

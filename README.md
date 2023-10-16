@@ -1,4 +1,4 @@
-# Keymaps
+# Description
 
 ## Tmux
 
@@ -21,6 +21,16 @@ Split window horizontally: <kbd>Leader</kbd> <kbd>-</kbd>
 Make split windows equal width & height: <kbd>Leader</kbd> <kbd>s</kbd> <kbd>e</kbd>
 
 Close current split window: <kbd>Leader</kbd> <kbd>s</kbd> <kbd>x</kbd>
+
+## Plugin Manager [lazy.nvim](https://github.com/folke/lazy.nvim)
+
+call `:Lazy` to install/update packages
+
+## Theme [vscode.nvim](https://github.com/Mofiqul/vscode.nvim)
+
+## Dashboard [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
+
+////////////////////
 
 ## Nvim-tree
 
