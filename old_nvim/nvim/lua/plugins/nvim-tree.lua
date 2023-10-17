@@ -18,7 +18,7 @@ local c = vc.get_colors()
 
 -- change color for folders in tree to yellowish (vs-code like)
 vim.api.nvim_set_hl(0, 'NvimTreeOpenedFolderIcon', { fg = '#D6B682' })
-vim.api.nvim_set_hl(0, 'NvimTreeClosedFolderIcon', { fg = '#D6B682' })
+vim.api.nvim_set_hl(0, 'NvimTreeClosedFolderIcon', { fg = '#B9965D' })
 
 vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = c.vscLeftDark })
 
