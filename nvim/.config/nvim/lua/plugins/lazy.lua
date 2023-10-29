@@ -94,6 +94,9 @@ require("lazy").setup({
 
   -- Linters and Formatters --
 
+  -- Formatter
+  "mhartington/formatter.nvim",
+
 	-- Treesitter
 	{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
 
