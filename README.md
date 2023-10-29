@@ -42,6 +42,10 @@ List open buffers: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>b</kbd>
 
 List available help tags: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>h</kbd>
 
+## Windows navigation [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+
+## Status Line [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
 ////////////////////
 
 ## Nvim-tree

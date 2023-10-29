@@ -40,5 +40,14 @@ require("lazy").setup({
     'nvim-telescope/telescope.nvim', 
     tag = '0.1.4',
     dependencies = { 'nvim-lua/plenary.nvim' }
-    }
+  },
+
+  -- Windows navigation
+    'christoomey/vim-tmux-navigator',
+
+  -- Status line
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
+  }
 })
