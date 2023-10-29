@@ -31,4 +31,14 @@ require("lazy").setup({
       "nvim-tree/nvim-web-devicons",
     },
   },
+
+  -- Telescope
+  { 'nvim-telescope/telescope-fzf-native.nvim',
+   build = 'make' },
+
+  {
+    'nvim-telescope/telescope.nvim', 
+    tag = '0.1.4',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+    }
 })

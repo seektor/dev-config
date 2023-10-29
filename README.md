@@ -30,6 +30,18 @@ call `:Lazy` to install/update packages
 
 ## Dashboard [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 
+## Telescope [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+
+Find files: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>f</kbd>
+
+Find string by typing in the cwd: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>g</kbd>
+
+Find string under cursor in the cwd: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>c</kbd>
+
+List open buffers: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>b</kbd>
+
+List available help tags: <kbd>Leader</kbd> <kbd>f</kbd> <kbd>h</kbd>
+
 ////////////////////
 
 ## Nvim-tree
