@@ -4,7 +4,9 @@ return {
         event = 'VimEnter',
         dependencies = { { 'nvim-tree/nvim-web-devicons' } },
         config = function()
-            require('dashboard').setup({
+            local dashboard = require('dashboard')
+
+            dashboard.setup({
                 theme = 'hyper',
                 shortcut_type = 'number',
                 config = {
