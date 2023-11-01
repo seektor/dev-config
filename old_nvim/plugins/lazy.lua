@@ -1,14 +1,4 @@
 require("lazy").setup({
-  -- File Tree
-  {
-    "nvim-tree/nvim-tree.lua",
-    version = "*",
-    lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
-  },
-
   -- Telescope
   {
     'nvim-telescope/telescope-fzf-native.nvim',
