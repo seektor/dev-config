@@ -1,1 +1,2 @@
-require("core")
+require("sektor.core")
+require("sektor.lazy")
