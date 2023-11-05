@@ -9,6 +9,15 @@ return {
         local lspconfig = require("lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
+        vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+            vim.lsp.handlers.hover,
+            {
+                border = "rounded", -- "shadow" , "none", "rounded"
+                -- width = 100,
+            }
+        )
+        vim.cmd("hi NormalFloat guibg=Normal")
+
         local opts = { noremap = true, silent = true }
         local on_attach = function(client, bufnr)
             opts.buffer = bufnr
@@ -47,7 +56,7 @@ return {
             vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 
             opts.desc = "Show documentation for what is under cursor"
-            keymap.set("n", "<leader>h", vim.lsp.buf.hover, opts)
+            vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, opts)
 
             opts.desc = "Restart LSP"
             vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)

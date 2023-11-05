@@ -14,7 +14,7 @@ return {
         vim.api.nvim_set_hl(0, 'NvimTreeClosedFolderIcon', { fg = '#B9965D' })
 
         -- adjust background
-        vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = require('vscode.colors').vscLeftDark })
+        -- vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = require('vscode.colors').vscLeftDark })
 
         -- toggle file explorer
         vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })

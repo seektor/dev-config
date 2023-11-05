@@ -26,6 +26,9 @@ return {
         -- setup format on save
         local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
+        -- format without saving
+        vim.keymap.set("n", "<leader>bf", vim.lsp.buf.format, { desc = "Format file" })
+
         null_ls.setup({
             -- add package.json as identifier for root (for typescript monorepos)
             root_dir = null_ls_utils.root_pattern(".null-ls-root", "Makefile", ".git", "package.json"),
