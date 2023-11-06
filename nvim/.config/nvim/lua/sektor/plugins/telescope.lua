@@ -16,7 +16,7 @@ return {
                 mappings = {
                     i = {
                         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-                        ["<C-j>"] = actions.move_selection_next, -- move to next result
+                        ["<C-j>"] = actions.move_selection_next,     -- move to next result
                     },
                 },
             },
@@ -28,5 +28,6 @@ return {
         vim.keymap.set("n", "<leader>fs", builtin.live_grep, { desc = "Find string in cwd" })
         vim.keymap.set("n", "<leader>fc", builtin.grep_string, { desc = "Find string under cursor in cwd" })
         vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Lists open buffers in current neovim instance" })
+        vim.keymap.set('n', '<leader>fgs', builtin.git_status, { desc = "Lists open git status" })
     end,
 }
