@@ -13,6 +13,9 @@ return {
         vim.api.nvim_set_hl(0, 'NvimTreeOpenedFolderIcon', { fg = '#D6B682' })
         vim.api.nvim_set_hl(0, 'NvimTreeClosedFolderIcon', { fg = '#B9965D' })
 
+        local c = require('vscode.colors')
+        vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = c.vscLeftDark })
+
         -- adjust background
         -- vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = require('vscode.colors').vscLeftDark })
 
