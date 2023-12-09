@@ -23,7 +23,7 @@ return {
             opts.buffer = bufnr
 
             opts.desc = "Show LSP references"
-            vim.keymap.set("n", "<leader>fd", "<cmd>Telescope lsp_references<CR>", opts)
+            vim.keymap.set("n", "<leader>fd", "<cmd>Telescope lsp_references show_line=false<CR>", opts)
 
             opts.desc = "Go to declaration"
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.declaration, opts)
