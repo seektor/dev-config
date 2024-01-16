@@ -1,5 +1,7 @@
 # Description
 
+Font - JetBrainsMono Nerd Font
+
 ## Tmux
 
 [Cheatsheet](https://tmuxcheatsheet.com/)
