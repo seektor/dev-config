@@ -35,8 +35,8 @@ return {
             sources = {
                 --  to disable file types use
                 --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-                formatting.prettier, -- js/ts formatter
-                formatting.stylua,   -- lua formatter
+                formatting.prettier,
+                formatting.stylua,
                 formatting.isort,
                 formatting.black,
                 diagnostics.pylint,
