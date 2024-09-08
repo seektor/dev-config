@@ -16,13 +16,9 @@ return {
         local c = require('vscode.colors')
         vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = c.vscLeftDark })
 
-        -- adjust background
-        -- vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = require('vscode.colors').vscLeftDark })
-
-        -- toggle file explorer
         vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
-        vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file tree" }) -- collapse file explorer
-        vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file tree" })   -- refresh file explorer
+        vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file tree" })
+        vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file tree" })
 
         local tree = require('nvim-tree')
 
@@ -50,7 +46,7 @@ return {
                     },
                     glyphs = {
                         git = {
-                            unstaged = "M",
+                            unstaged = "US",
                             staged = "S",
                             unmerged = "UM",
                             renamed = "R",
