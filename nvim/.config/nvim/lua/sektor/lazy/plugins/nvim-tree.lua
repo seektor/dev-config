@@ -16,7 +16,7 @@ return {
         local c = require('vscode.colors')
         vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = c.vscLeftDark })
 
-        vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+        vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
         vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file tree" })
         vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file tree" })
 

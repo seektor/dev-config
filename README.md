@@ -2,6 +2,8 @@
 
 Font - JetBrainsMono Nerd Font
 
+Ripgrep (telescope dependencies)
+
 ## Tmux
 
 [Cheatsheet](https://tmuxcheatsheet.com/)
