@@ -4,10 +4,6 @@ return {
     config = function()
         local lualine = require('lualine')
 
-        lualine.setup({
-            options = {
-                theme = 'vscode',
-            },
-        })
+        lualine.setup({})
     end
 }

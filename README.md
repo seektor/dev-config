@@ -1,6 +1,6 @@
 # Description
 
-Font - JetBrainsMono Nerd Font
+Font - JetBrainsMono Nerd Font FIRA CODE (use diff for non-ascii)
 
 Ripgrep (telescope dependencies)
 
