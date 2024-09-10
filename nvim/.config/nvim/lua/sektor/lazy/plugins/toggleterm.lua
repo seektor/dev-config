@@ -8,12 +8,12 @@ return {
             shade_terminals = false,
         })
 
-        vim.keymap.set("n", "<leader>tr", ":ToggleTerm<CR>")
+        vim.keymap.set("n", "<leader>th", ":ToggleTerm<CR>")
+        vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float<CR>")
 
         function _G.set_terminal_keymaps()
             local opts = { buffer = 0 }
 
-            opts.desc = "Escape terminal"
             vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
             vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 
