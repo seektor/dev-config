@@ -17,7 +17,9 @@ return {
         mason.setup({})
 
         mason_lspconfig.setup({
-            ensure_installed = {},
+            ensure_installed = {
+                "rust_analyzer",
+            },
             automatic_installation = true,
         })
 

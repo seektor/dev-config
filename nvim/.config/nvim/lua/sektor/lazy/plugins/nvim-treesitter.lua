@@ -18,7 +18,8 @@ return {
                 "lua",
                 "vim",
                 "gitignore",
-                "python"
+                "python",
+                "rust",
             },
         })
     end,
