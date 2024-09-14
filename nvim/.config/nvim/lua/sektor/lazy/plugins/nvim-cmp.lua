@@ -1,6 +1,5 @@
 return {
     "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
     dependencies = {
         "hrsh7th/cmp-buffer",                  -- source for text in buffer
         "hrsh7th/cmp-path",                    -- source for file system paths
@@ -9,6 +8,7 @@ return {
         "hrsh7th/cmp-nvim-lsp-signature-help", -- function signatures with the current parameter emphasized
         "onsails/lspkind.nvim",                -- vs-code like pictograms
     },
+    event = "InsertEnter",
     config = function()
         local cmp = require("cmp")
         local luasnip = require("luasnip")

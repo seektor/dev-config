@@ -3,6 +3,7 @@ return {
     dependencies = {
         "nvim-telescope/telescope.nvim"
     },
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
         local telescope = require("telescope")
 

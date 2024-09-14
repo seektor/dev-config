@@ -6,6 +6,7 @@ return {
         "SmiteshP/nvim-navic",
         "nvim-tree/nvim-web-devicons",
     },
+    event = { "BufReadPre", "BufNewFile" },
     opts = {
         theme = {
             normal = { fg = "#898989" },
