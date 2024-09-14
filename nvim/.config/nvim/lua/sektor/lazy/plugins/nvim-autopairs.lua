@@ -8,10 +8,7 @@ return {
         local autopairs = require("nvim-autopairs")
 
         autopairs.setup({
-            check_ts = true,                  -- enable treesitter
-            ts_config = {
-                javascript = { "template_string" }, -- don't add pairs in javscript template_string treesitter nodes
-            },
+            check_ts = true, -- enable treesitter
         })
 
         local cmp_autopairs = require("nvim-autopairs.completion.cmp")

@@ -9,14 +9,22 @@ return {
         local lspconfig = require("lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
-        vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+        vim.diagnostic.config({
+            virtual_text = false,
+            float = {
+                border = 'rounded',
+            },
+        })
+
+        vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
             vim.lsp.handlers.hover,
-            {
-                border = "rounded",
-            }
+            { border = 'rounded' }
         )
 
-        vim.diagnostic.config({ virtual_text = false })
+        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
+            vim.lsp.handlers.signature_help,
+            { border = 'rounded' }
+        )
 
         local signs = { Error = '󰅚 ', Warn = '󰀪 ', Hint = '󰌶 ', Info = '󰋽 ' }
         for type, icon in pairs(signs) do
@@ -70,6 +78,11 @@ return {
 
         -- enable autocompletion (assign to every lsp server config)
         local capabilities = cmp_nvim_lsp.default_capabilities()
+
+        lspconfig["rust_analyzer"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
 
         lspconfig["lua_ls"].setup({
             capabilities = capabilities,

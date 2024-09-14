@@ -13,8 +13,7 @@ return {
         vim.api.nvim_set_hl(0, 'NvimTreeOpenedFolderIcon', { fg = '#D6B682' })
         vim.api.nvim_set_hl(0, 'NvimTreeClosedFolderIcon', { fg = '#B9965D' })
 
-        local c = require('vscode.colors')
-        vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = c.vscLeftDark })
+        vim.api.nvim_set_hl(0, 'NvimTreeNormal', vim.api.nvim_get_hl_by_name('Normal', true))
 
         vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
         vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file tree" })
