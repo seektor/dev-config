@@ -11,7 +11,8 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                rust = { "rustfmt", lsp_format = "fallback" }
+                rust = { "rustfmt", lsp_format = "fallback" },
+                go = { "gofmt" }
             },
             format_on_save = {
                 lsp_fallback = true,
