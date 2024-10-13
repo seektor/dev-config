@@ -19,13 +19,18 @@ return {
         mason_lspconfig.setup({
             ensure_installed = {
                 "rust_analyzer",
-                "gopls"
+                "gopls",
+                "ts_ls"
             },
             automatic_installation = true,
         })
 
         mason_tool_installer.setup({
-            ensure_installed = {},
+            ensure_installed = {
+                "prettier",
+                "stylua",
+                "eslint_d",
+            },
         })
 
         mason_nvim_dap.setup({

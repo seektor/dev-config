@@ -46,3 +46,6 @@ vim.opt.splitbelow = true
 
 -- consider string-string as whole word
 vim.opt.iskeyword:append("-")
+
+-- spell check
+vim.opt.spell = true

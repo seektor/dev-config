@@ -12,7 +12,9 @@ return {
         conform.setup({
             formatters_by_ft = {
                 rust = { "rustfmt", lsp_format = "fallback" },
-                go = { "gofmt" }
+                go = { "gofmt" },
+                typescript = { { 'prettierd', "prettier" } },
+                typescriptreact = { { 'prettierd', "prettier" } },
             },
             format_on_save = {
                 lsp_fallback = true,
