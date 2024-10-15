@@ -2,6 +2,8 @@
 
 Font - JetBrainsMono Nerd Font FIRA CODE (use diff for non-ascii)
 
+brew install --cask font-fira-code-nerd-font
+
 Ripgrep (telescope dependencies)
 
 ## Tmux
