@@ -6,9 +6,10 @@ return {
 
         toggleterm.setup({
             shade_terminals = false,
+            persist_mode = false,
         })
 
-        vim.keymap.set("n", "<leader>th", ":ToggleTerm<CR>")
+        vim.keymap.set("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>")
         vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float<CR>")
 
         function _G.set_terminal_keymaps()
