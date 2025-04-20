@@ -21,6 +21,13 @@ config.colors = {
     brights = { "#676767", "#dc7974", "#57e690", "#ece100", "#a6aaf1", "#e07de0", "#5ffdff", "#feffff" }
 }
 
+config.keys = {
+    -- Make Cmd-Left equivalent to Alt-b which many line editors interpret as backward-word
+    { key = "LeftArrow",  mods = "CMD", action = wezterm.action { SendString = "\x1bb" } },
+    -- Make Cmd-Right equivalent to Alt-f; forward-word
+    { key = "RightArrow", mods = "CMD", action = wezterm.action { SendString = "\x1bf" } },
+}
+
 -- config.window_background_opacity = 0.9
 
 return config
