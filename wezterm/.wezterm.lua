@@ -9,6 +9,8 @@ config.harfbuzz_features = { 'calt=0' }
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 
+config.cursor_blink_rate = 0
+
 config.colors = {
     foreground = "#dbdbdb",
     background = "#1e1e1e",
@@ -22,10 +24,10 @@ config.colors = {
 }
 
 config.keys = {
-    -- Make Cmd-Left equivalent to Alt-b which many line editors interpret as backward-word
-    { key = "LeftArrow",  mods = "CMD", action = wezterm.action { SendString = "\x1bb" } },
-    -- Make Cmd-Right equivalent to Alt-f; forward-word
-    { key = "RightArrow", mods = "CMD", action = wezterm.action { SendString = "\x1bf" } },
+    -- Make Opt-h equivalent to Alt-b which many line editors interpret as backward-word
+    { key = "h", mods = "OPT", action = wezterm.action { SendString = "\x1bb" } },
+    -- Make Opt-l equivalent to Alt-f; forward-word
+    { key = "l", mods = "OPT", action = wezterm.action { SendString = "\x1bf" } },
 }
 
 -- config.window_background_opacity = 0.9

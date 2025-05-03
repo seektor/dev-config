@@ -6,6 +6,7 @@ return {
         auto_session.setup({
             auto_restore_enabled = false,
             auto_session_suppress_dirs = { "~/" },
+            change_to_vcs_root = true,
         })
 
         local keymap = vim.keymap
