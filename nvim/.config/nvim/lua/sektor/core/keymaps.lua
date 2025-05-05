@@ -12,7 +12,7 @@ vim.keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 vim.keymap.set("n", "<leader>|", "<C-w>v", { desc = "Split window vertically" })
 vim.keymap.set("n", "<leader>-", "<C-w>s", { desc = "Split window horizontally" })
 
-vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
+vim.keymap.set("n", "<leader>tc", "<cmd>tabnew<CR>", { desc = "Create new tab" })
 vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
 vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
