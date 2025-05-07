@@ -14,19 +14,6 @@ return {
             float = {
                 border = 'rounded',
             },
-        })
-
-        vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(
-            vim.lsp.handlers.hover,
-            { border = 'rounded' }
-        )
-
-        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
-            vim.lsp.handlers.signature_help,
-            { border = 'rounded' }
-        )
-
-        vim.diagnostic.config({
             signs = {
                 text = {
                     [vim.diagnostic.severity.ERROR] = '󰅚 ',
@@ -81,7 +68,7 @@ return {
             vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 
             opts.desc = "Show documentation for what is under cursor"
-            vim.keymap.set("n", "<leader>hh", vim.lsp.buf.hover, opts)
+            vim.keymap.set("n", "<leader>hh", function() vim.lsp.buf.hover({ border = "rounded" }) end, opts)
 
             opts.desc = "Restart LSP"
             vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
