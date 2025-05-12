@@ -9,8 +9,13 @@ vim.keymap.set("n", "x", '"_x', { desc = "Delete single character without copyin
 vim.keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
 vim.keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 
-vim.keymap.set("n", "<leader>|", "<C-w>v", { desc = "Split window vertically" })
-vim.keymap.set("n", "<leader>-", "<C-w>s", { desc = "Split window horizontally" })
+vim.keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" })
+vim.keymap.set("n", "<leader>wh", "<C-w>s", { desc = "Split window horizontally" })
+vim.keymap.set("n", "<leader>w+", "<C-w>+", { desc = "Increase window height" })
+vim.keymap.set("n", "<leader>w-", "<C-w>-", { desc = "Decrease window height" })
+vim.keymap.set("n", "<leader>w>", "<C-w>>", { desc = "Increase window width" })
+vim.keymap.set("n", "<leader>w<", "<C-w><", { desc = "Decrease window width" })
+vim.keymap.set("n", "<leader>w=", "<C-w>=", { desc = "Equalize windows width and height" })
 
 vim.keymap.set("n", "<leader>tc", "<cmd>tabnew<CR>", { desc = "Create new tab" })
 vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
