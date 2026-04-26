@@ -20,6 +20,24 @@ Personal development environment configurations, managed with [GNU Stow](https:/
 
 ## Configs
 
+- **tmux** — terminal multiplexer with session persistence
+
+  Install tmux and TPM:
+
+  ```bash
+  brew install tmux
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  ```
+
+  After stowing, open tmux and press `Ctrl+b I` to install plugins (catppuccin theme).
+
+  | Key | Action |
+  |-----|--------|
+  | `Ctrl+b \|` | Split pane vertically |
+  | `Ctrl+b -` | Split pane horizontally |
+  | `Ctrl+b c` | New window |
+  | `C-h/j/k/l` | Navigate panes **and** Neovim windows seamlessly |
+
 - **Ghostty** — terminal emulator
 - **Starship** — cross-shell prompt (Catppuccin Mocha theme)
 

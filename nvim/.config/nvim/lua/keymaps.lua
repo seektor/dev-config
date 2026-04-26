@@ -18,12 +18,6 @@ map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>Q", "<cmd>qa!<cr>", { desc = "Quit all" })
 
--- Window navigation
-map("n", "<C-h>", "<C-w>h", { desc = "Window left" })
-map("n", "<C-j>", "<C-w>j", { desc = "Window down" })
-map("n", "<C-k>", "<C-w>k", { desc = "Window up" })
-map("n", "<C-l>", "<C-w>l", { desc = "Window right" })
-
 -- Window splits
 map("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Split vertical" })
 map("n", "<leader>sh", "<cmd>split<cr>", { desc = "Split horizontal" })
