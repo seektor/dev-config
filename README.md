@@ -58,7 +58,7 @@ Personal development environment configurations, managed with [GNU Stow](https:/
   Install fzf and fd (used as the default file finder):
 
   ```bash
-  brew install fzf fd bat tree
+  brew install fzf fd bat tree ripgrep
   ```
 
   After stowing, add to `~/.zshrc`:
@@ -91,6 +91,19 @@ Personal development environment configurations, managed with [GNU Stow](https:/
   | `Ctrl-Y` | Copy selection to clipboard and exit |
   | `Ctrl-A` | Select all matches |
   | `Ctrl-D` | Deselect all |
+
+- **nvim** — Neovim with lazy.nvim plugin manager
+
+  Plugins are installed automatically on first launch. Telescope (fuzzy finder) requires `ripgrep` for live grep (already in the fzf install line above) and `fd` for file finding.
+
+  | Key | Action |
+  |-----|--------|
+  | `<leader>ff` | Find files |
+  | `<leader>fg` | Live grep |
+  | `<leader>fb` | Buffers |
+  | `<leader>fr` | Recent files |
+  | `<leader>fc` | Grep word under cursor |
+  | `<leader>fh` | Help tags |
 
 - **my-bookmarks-manager** — fzf-powered directory bookmarks
 

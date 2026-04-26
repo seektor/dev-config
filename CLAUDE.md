@@ -29,8 +29,8 @@ stow --delete --target="$HOME" --dir="$(pwd)" <package>
 1. Create `<tool>/.config/<tool>/` (or wherever the tool expects its config relative to `$HOME`)
 2. Add the config file(s)
 3. Add `stow ... <tool>` to `stow.sh`
-4. Document any requirements or important decisions in `README.md`
+4. Update `README.md` immediately — add install instructions for every new CLI tool, brew cask, or font introduced, and document significant config decisions. Do this as part of the same task, not as a follow-up.
 
 ## README policy
 
-Any new dependency (font, CLI tool, brew cask), library, or significant config decision must be documented in `README.md` — this is the source of truth for setup requirements.
+`README.md` is the source of truth for setup requirements. Any new dependency (font, CLI tool, brew cask) or significant config decision must be documented there. This applies even when the dependency is introduced indirectly (e.g. a Neovim plugin that requires a system binary).
