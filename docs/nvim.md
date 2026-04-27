@@ -4,7 +4,7 @@
 
 ```bash
 brew install neovim ripgrep fd
-xcode-select --install   # provides `make`, needed to build telescope-fzf-native
+xcode-select --install   # provides `make`, needed to build telescope-fzf-native and treesitter parsers
 ```
 
 ## Plugin manager
@@ -19,6 +19,8 @@ xcode-select --install   # provides `make`, needed to build telescope-fzf-native
 | `nvim-telescope/telescope.nvim` | Fuzzy finder |
 | `nvim-telescope/telescope-fzf-native.nvim` | Native fzf sorter for Telescope |
 | `christoomey/vim-tmux-navigator` | Seamless `C-h/j/k/l` navigation across Neovim windows and tmux panes |
+| `nvim-treesitter/nvim-treesitter` | Syntax highlighting and indentation via Tree-sitter |
+| `nvim-treesitter/nvim-treesitter-textobjects` | Text objects and motions based on Tree-sitter nodes |
 
 ## Leader key
 
@@ -81,6 +83,15 @@ xcode-select --install   # provides `make`, needed to build telescope-fzf-native
 | `[d` | Previous diagnostic |
 | `]d` | Next diagnostic |
 | `<leader>e` | Show diagnostic float |
+
+## Treesitter text objects
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `af` / `if` | visual / operator | Around / inside function |
+| `ac` / `ic` | visual / operator | Around / inside class |
+| `]f` | normal | Next function start |
+| `[f` | normal | Previous function start |
 
 ## Telescope — open pickers
 
