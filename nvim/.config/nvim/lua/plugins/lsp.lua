@@ -17,7 +17,7 @@ return {
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright", "ruff" },
+        ensure_installed = { "pyright", "ruff", "clangd" },
         automatic_installation = true,
         handlers = {
           function(server_name)
