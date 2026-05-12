@@ -15,6 +15,7 @@ After stowing, open tmux and press `Prefix + I` to install plugins.
 |--------|---------|
 | `tmux-plugins/tpm` | Plugin manager |
 | `catppuccin/tmux#v2.1.3` | Catppuccin Mocha status bar theme |
+| `tmux-plugins/tmux-resurrect` | Save and restore sessions manually |
 
 ## Prefix key
 
@@ -41,6 +42,15 @@ These bindings work transparently — if the focused pane is running Neovim, the
 
 > `C-l` (clear screen) is shadowed by the navigation binding above.
 > Use `Prefix + C-l` to send a clear-screen to the shell.
+
+## Session persistence (tmux-resurrect)
+
+| Key | Action |
+|-----|--------|
+| `Prefix + Ctrl-s` | Save session |
+| `Prefix + Ctrl-r` | Restore session |
+
+Saves/restores windows, panes, layout, and working directories. `claude` processes are also restored automatically.
 
 ## Notable settings
 
