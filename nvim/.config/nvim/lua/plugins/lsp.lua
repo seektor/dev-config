@@ -11,11 +11,19 @@ return {
     dependencies = {
       "williamboman/mason.nvim",
       "neovim/nvim-lspconfig",
+      "hrsh7th/cmp-nvim-lsp",
     },
     config = function()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright" },
+        ensure_installed = { "pyright", "ruff" },
         automatic_installation = true,
+        handlers = {
+          function(server_name)
+            require("lspconfig")[server_name].setup({ capabilities = capabilities })
+          end,
+        },
       })
 
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })

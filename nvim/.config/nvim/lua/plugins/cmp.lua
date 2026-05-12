@@ -54,9 +54,6 @@ return {
         }),
       })
 
-      -- feed pyright completions into cmp
-      local capabilities = require("cmp_nvim_lsp").default_capabilities()
-      require("lspconfig").pyright.setup({ capabilities = capabilities })
     end,
   },
 }
