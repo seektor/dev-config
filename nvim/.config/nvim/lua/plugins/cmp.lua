@@ -8,10 +8,12 @@ return {
       "hrsh7th/cmp-path",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
+      "onsails/lspkind.nvim",
     },
     config = function()
       local cmp = require("cmp")
       local luasnip = require("luasnip")
+      local lspkind = require("lspkind")
 
       cmp.setup({
         completion = {
@@ -55,9 +57,14 @@ return {
           { name = "buffer" },
           { name = "path" },
         }),
+        formatting = {
+          fields = { "icon", "abbr" },
+        },
+        window = {
+          completion = { border = "rounded", winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None" },
+          documentation = { border = "rounded", winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None" },
+        },
       })
-
-
     end,
   },
 }
