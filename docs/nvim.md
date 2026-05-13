@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-brew install neovim ripgrep fd
+brew install neovim ripgrep fd lazygit
 xcode-select --install   # provides `make`, needed to build telescope-fzf-native and treesitter parsers
 ```
 
@@ -21,6 +21,10 @@ xcode-select --install   # provides `make`, needed to build telescope-fzf-native
 | `christoomey/vim-tmux-navigator` | Seamless `C-h/j/k/l` navigation across Neovim windows and tmux panes |
 | `nvim-treesitter/nvim-treesitter` | Syntax highlighting and indentation via Tree-sitter |
 | `nvim-treesitter/nvim-treesitter-textobjects` | Text objects and motions based on Tree-sitter nodes |
+| `nvimdev/dashboard-nvim` | Start screen (hyper theme) with recent files, projects, and session shortcuts |
+| `rmagatti/auto-session` | Per-directory session save/restore with Telescope search |
+| `lewis6991/gitsigns.nvim` | Inline git hunk signs, staging, blame, and diff |
+| `akinsho/toggleterm.nvim` | Floating/split terminals; hosts lazygit |
 
 ## Leader key
 
@@ -43,6 +47,19 @@ xcode-select --install   # provides `make`, needed to build telescope-fzf-native
 | `<leader>w` | Save |
 | `<leader>q` | Quit |
 | `<leader>Q` | Quit all (force) |
+
+## Sessions (auto-session)
+
+Sessions are saved automatically per directory on exit. Restore is manual.
+
+| Key | Action |
+|-----|--------|
+| `<leader>ss` | Save session |
+| `<leader>sr` | Restore session for current directory |
+| `<leader>sf` | Search sessions (Telescope picker) |
+| `<leader>sx` | Delete session |
+
+The dashboard (hyper theme) opens on launch with shortcuts for find file (`f`), sessions (`s`), recent files (`r`), and plugin update (`u`).
 
 ## Window splits
 
@@ -111,3 +128,30 @@ xcode-select --install   # provides `make`, needed to build telescope-fzf-native
 | `<C-k>` | Move selection up |
 | `<C-j>` | Move selection down |
 | `<C-q>` | Send selected results to quickfix list and open it |
+
+## Terminal (toggleterm)
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<C-t>` | normal | Toggle floating terminal |
+| `<leader>tf` | normal | Floating terminal |
+| `<leader>th` | normal | Horizontal split terminal |
+| `<leader>tv` | normal | Vertical split terminal |
+| `<leader>ts` | visual | Send selection to terminal |
+| `<Esc><Esc>` | terminal | Exit terminal mode (back to normal) |
+
+## Git (gitsigns + lazygit)
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<leader>tg` | normal | Open lazygit (floating terminal) |
+| `]h` | normal | Next hunk |
+| `[h` | normal | Previous hunk |
+| `<leader>hs` | normal / visual | Stage hunk |
+| `<leader>hr` | normal / visual | Reset hunk |
+| `<leader>hS` | normal | Stage buffer |
+| `<leader>hu` | normal | Undo stage hunk |
+| `<leader>hp` | normal | Preview hunk |
+| `<leader>hb` | normal | Blame line (full) |
+| `<leader>tb` | normal | Toggle inline line blame |
+| `<leader>hd` | normal | Diff this |
