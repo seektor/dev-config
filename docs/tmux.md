@@ -19,7 +19,7 @@ After stowing, open tmux and press `Prefix + I` to install plugins.
 
 ## Prefix key
 
-`Ctrl+b`
+`Ctrl+a`
 
 ## Pane / window management
 
@@ -42,6 +42,44 @@ These bindings work transparently — if the focused pane is running Neovim, the
 
 > `C-l` (clear screen) is shadowed by the navigation binding above.
 > Use `Prefix + C-l` to send a clear-screen to the shell.
+
+## Session management
+
+### Create
+
+```bash
+tmux new-session -s <name> -c <directory>
+```
+
+### Detach (leave session running in background)
+
+```
+Prefix + d
+```
+
+### Switch between sessions
+
+```
+Prefix + s       # interactive list, navigate with j/k, Enter to switch
+```
+
+```bash
+tmux switch-client -t <name>   # from terminal
+tmux attach -t <name>          # reattach from outside tmux
+```
+
+Sessions are listed in creation order. To control order, prefix names with letters/numbers (`a-dev-config`, `b-dev-main`) — the list sorts alphabetically.
+
+### Kill a session
+
+```
+Prefix + :kill-session          # kills current session, drops to terminal
+```
+
+```bash
+tmux kill-session -t <name>    # from terminal
+tmux kill-server               # kill all sessions and the tmux server
+```
 
 ## Session persistence (tmux-resurrect)
 
