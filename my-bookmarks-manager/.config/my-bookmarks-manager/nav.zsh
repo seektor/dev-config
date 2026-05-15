@@ -1,10 +1,7 @@
 _BMM_BOOKMARKS=~/.config/my-bookmarks-manager/bookmarks
 
 bm() {
-  local label="${1}"
-  if [[ -z "$label" ]]; then
-    read "label?Label (e.g. work/api): "
-  fi
+  local label="${1:-${PWD:t}}"
   printf "%s\t%s\n" "$label" "$PWD" >> "$_BMM_BOOKMARKS"
   echo "Bookmarked: $label → $PWD"
 }
