@@ -18,6 +18,17 @@ return {
       },
     })
 
+    vim.diagnostic.config({
+      signs = {
+        text = {
+          [vim.diagnostic.severity.ERROR] = "󰅚",
+          [vim.diagnostic.severity.WARN]  = "󰀪",
+          [vim.diagnostic.severity.INFO]  = "󰋽",
+          [vim.diagnostic.severity.HINT]  = "󰌶",
+        },
+      },
+    })
+
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
     vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "References" })
