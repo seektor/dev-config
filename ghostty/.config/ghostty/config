@@ -4,3 +4,7 @@ font-size = 18
 theme = Catppuccin Mocha
 
 window-inherit-working-directory = false
+
+keybind = super+|=new_split:right
+keybind = super+-=new_split:down
+keybind = super+d=close_surface
