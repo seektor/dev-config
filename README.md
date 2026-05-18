@@ -18,3 +18,4 @@ Personal development environment configurations, managed with [GNU Stow](https:/
 | Ghostty | [docs/ghostty.md](docs/ghostty.md) |
 | Starship | [docs/starship.md](docs/starship.md) |
 | my-bookmarks-manager | [docs/my-bookmarks-manager.md](docs/my-bookmarks-manager.md) |
+| glow | [docs/glow.md](docs/glow.md) |
