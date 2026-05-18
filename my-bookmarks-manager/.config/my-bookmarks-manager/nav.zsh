@@ -8,25 +8,25 @@ bm() {
 
 bmrm() {
   local selected label tmpfile
-  selected=$(awk -F'\t' '{ printf "%-30s %s\n", $1, $2 }' "$_BMM_BOOKMARKS" \
+  selected=$(awk -F'\t' '{ printf "%-30s\t%s\n", $1, $2 }' "$_BMM_BOOKMARKS" \
     | fzf --prompt="remove bookmark> ")
   [[ -z "$selected" ]] && return
-  label=$(echo "$selected" | awk '{print $1}')
+  label=$(echo "$selected" | cut -f1 | sed 's/[[:space:]]*$//')
   tmpfile=$(mktemp)
-  grep -v "^${label}	" "$_BMM_BOOKMARKS" > "$tmpfile" && mv "$tmpfile" "$_BMM_BOOKMARKS"
+  grep -vF "${label}	" "$_BMM_BOOKMARKS" > "$tmpfile" && mv "$tmpfile" "$_BMM_BOOKMARKS"
   echo "Removed: $label"
 }
 
 _cd_bookmark() {
   local selected
   selected=$(
-    awk -F'\t' '{ printf "%-30s %s\n", $1, $2 }' "$_BMM_BOOKMARKS" \
+    awk -F'\t' '{ printf "%-30s\t%s\n", $1, $2 }' "$_BMM_BOOKMARKS" \
     | fzf --prompt="bookmark> " \
-          --preview 'ls -la "$(echo {} | cut -c32-)"' \
+          --preview 'ls -la "$(echo {} | cut -f2-)"' \
           --preview-window=right:40%
   )
   if [[ -n "$selected" ]]; then
-    cd "$(echo "$selected" | cut -c32-)" && zle reset-prompt
+    cd "$(echo "$selected" | cut -f2-)" && zle reset-prompt
   fi
 }
 zle -N _cd_bookmark
