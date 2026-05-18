@@ -15,13 +15,12 @@ map("n", "x", '"_x') -- delete single char without polluting the register
 
 -- Save / quit
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
-map("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
 map("n", "<leader>Q", "<cmd>qa!<cr>", { desc = "Quit all" })
 
 -- Window splits
-map("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Split vertical" })
-map("n", "<leader>sh", "<cmd>split<cr>", { desc = "Split horizontal" })
-map("n", "<leader>sd", "<cmd>close<cr>", { desc = "Close split" })
+map("n", "<leader>|", "<cmd>vsplit<cr>", { desc = "Split vertical" })
+map("n", "<leader>-", "<cmd>split<cr>", { desc = "Split horizontal" })
+map("n", "<leader>q", "<cmd>close<cr>", { desc = "Close split" })
 
 -- Window resize
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
