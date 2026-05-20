@@ -9,6 +9,7 @@ $git_status\
 $nodejs\
 $rust\
 $golang\
+$conda\
 $python\
 $cmd_duration\
 $line_break\
@@ -52,9 +53,16 @@ style = "bold peach"
 symbol = " "
 style = "bold sky"
 
+[conda]
+symbol = " "
+style = "bold teal"
+format = "[$symbol$environment]($style) "
+ignore_base = false
+
 [python]
 symbol = " "
 style = "bold yellow"
+format = "[$symbol$pyenv_prefix($version)]($style) "
 
 [cmd_duration]
 min_time = 2_000
