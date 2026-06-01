@@ -27,7 +27,7 @@ return {
               icon = " ",
               desc = "Sessions",
               group = "DiagnosticHint",
-              action = "SessionSearch",
+              action = "Autosession search",
               key = "s",
             },
             {
