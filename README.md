@@ -20,3 +20,4 @@ Personal development environment configurations, managed with [GNU Stow](https:/
 | my-bookmarks-manager | [docs/my-bookmarks-manager.md](docs/my-bookmarks-manager.md) |
 | glow | [docs/glow.md](docs/glow.md) |
 | AeroSpace | [docs/aerospace.md](docs/aerospace.md) |
+| scripts | [docs/scripts.md](docs/scripts.md) |

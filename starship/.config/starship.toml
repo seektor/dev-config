@@ -1,4 +1,5 @@
 palette = "catppuccin_mocha"
+command_timeout = 2000
 
 format = """
 $os\
