@@ -21,3 +21,4 @@ Personal development environment configurations, managed with [GNU Stow](https:/
 | glow | [docs/glow.md](docs/glow.md) |
 | AeroSpace | [docs/aerospace.md](docs/aerospace.md) |
 | scripts | [docs/scripts.md](docs/scripts.md) |
+| yazi | [docs/yazi.md](docs/yazi.md) |

@@ -13,3 +13,4 @@ stow --target="$HOME" --dir="$DOTFILES_DIR" nvim
 stow --target="$HOME" --dir="$DOTFILES_DIR" glow
 stow --target="$HOME" --dir="$DOTFILES_DIR" aerospace
 stow --target="$HOME" --dir="$DOTFILES_DIR" scripts
+stow --target="$HOME" --dir="$DOTFILES_DIR" yazi
