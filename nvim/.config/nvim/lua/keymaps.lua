@@ -15,6 +15,7 @@ map("n", "x", '"_x') -- delete single char without polluting the register
 
 -- Save / quit
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
+map("n", "<leader>W", "<cmd>wa<cr>", { desc = "Save all" })
 map("n", "<leader>Q", "<cmd>qa!<cr>", { desc = "Quit all" })
 
 -- Window splits
