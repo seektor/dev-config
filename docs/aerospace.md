@@ -28,14 +28,14 @@ Modifier: `alt`
 
 ### Workspaces
 
-| Key            | Action                                |
-| -------------- | ------------------------------------- |
-| `alt-1`, `alt-2` | Switch to workspace (main monitor)  |
-| `alt-b`        | Switch to Brave workspace             |
-| `alt-t`        | Switch to terminal workspace          |
-| `alt-v`        | Switch to VSCode workspace            |
-| `alt-6`        | Switch to unassigned workspace        |
-| `alt-shift-1/2/b/t/v/6` | Move window to workspace (and follow) |
+| Key                  | Action                                  |
+| -------------------- | ---------------------------------------- |
+| `alt-1`, `alt-2`, `alt-3` | Switch to workspace (main monitor)  |
+| `alt-4`              | Switch to unassigned workspace (secondary monitor) |
+| `alt-b`              | Switch to Brave workspace                |
+| `alt-t`              | Switch to terminal workspace              |
+| `alt-v`              | Switch to VSCode workspace                |
+| `alt-shift-1/2/3/4/b/t/v` | Move window to workspace (and follow) |
 
 | `alt-tab`        | Toggle between last two workspaces    |
 | `alt-shift-tab`  | Move workspace to next monitor        |
@@ -60,13 +60,13 @@ Modifier: `alt`
 
 | App           | Workspace | Monitor     |
 | ------------- | --------- | ----------- |
-| —             | 1–2       | Main        |
-| Brave Browser | 3         | Secondary   |
-| Ghostty       | 4         | Secondary   |
-| VSCode        | 5         | Secondary   |
-| —             | 6         | Secondary   |
+| —             | 1–3       | Main        |
+| —             | 4         | Secondary   |
+| Brave Browser | 5         | Secondary   |
+| Ghostty       | 6         | Secondary   |
+| VSCode        | 7         | Secondary   |
 
 ## Monitor order
 
-Workspaces 1–2 are pinned to monitor 1 (main), 3–6 to monitor 2 (secondary).
+Workspaces 1–3 are pinned to monitor 1 (main), 4–7 to monitor 2 (secondary).
 Adjust `[workspace-to-monitor-force-assignment]` in `.aerospace.toml` if your monitor order differs.

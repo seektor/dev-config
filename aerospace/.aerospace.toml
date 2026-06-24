@@ -15,10 +15,11 @@ outer.bottom     = 0
 [workspace-to-monitor-force-assignment]
 1 = 1  # main monitor
 2 = 1  # main monitor
-3 = 2  # Brave      → secondary monitor
-4 = 2  # Ghostty    → secondary monitor
-5 = 2  # VSCode     → secondary monitor
-6 = 2  # secondary monitor
+3 = 1  # main monitor
+4 = 2  # secondary monitor
+5 = 2  # Brave      → secondary monitor
+6 = 2  # Ghostty    → secondary monitor
+7 = 2  # VSCode     → secondary monitor
 
 [mode.main.binding]
 
@@ -37,18 +38,20 @@ alt-shift-l = 'move right'
 # Switch workspace
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
-alt-b = 'workspace 3'  # brave
-alt-t = 'workspace 4'  # terminal
-alt-v = 'workspace 5'  # vscode
-alt-6 = 'workspace 6'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-b = 'workspace 5'  # brave
+alt-t = 'workspace 6'  # terminal
+alt-v = 'workspace 7'  # vscode
 
 # Move window to workspace (and follow it)
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
-alt-shift-b = ['move-node-to-workspace 3', 'workspace 3']
-alt-shift-t = ['move-node-to-workspace 4', 'workspace 4']
-alt-shift-v = ['move-node-to-workspace 5', 'workspace 5']
-alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
+alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
+alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
+alt-shift-b = ['move-node-to-workspace 5', 'workspace 5']
+alt-shift-t = ['move-node-to-workspace 6', 'workspace 6']
+alt-shift-v = ['move-node-to-workspace 7', 'workspace 7']
 
 # Move window to other monitor (keeps workspace)
 alt-shift-leftSquareBracket  = 'move-node-to-monitor prev --wrap-around'
@@ -82,12 +85,12 @@ run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'Brave Browser'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'Ghostty'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'Code'
-run = 'move-node-to-workspace 5'
+run = 'move-node-to-workspace 7'
