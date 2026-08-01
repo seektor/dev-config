@@ -16,13 +16,16 @@ Modifier: `alt`
 
 | Key           | Action                          |
 | ------------- | ------------------------------- |
-| `alt-h/j/k/l` | Focus window left/down/up/right |
+| `alt-h/j/k/;` | Focus window left/down/up/right |
+
+`right` is bound to `;` rather than `l` because `alt-l`/`alt-shift-l` type `ł`/`Ł` on the
+Polish layout, and AeroSpace would swallow them.
 
 ### Move window
 
 | Key                 | Action                          |
 | ------------------- | ------------------------------- |
-| `alt-shift-h/j/k/l` | Move window in direction        |
+| `alt-shift-h/j/k/;` | Move window in direction        |
 | `alt-shift-[`       | Move window to previous monitor |
 | `alt-shift-]`       | Move window to next monitor     |
 
@@ -54,7 +57,7 @@ Modifier: `alt`
 
 | Key           | Action        |
 | ------------- | ------------- |
-| `alt-shift-;` | Reload config |
+| `alt-shift-r` | Reload config |
 
 ## App → workspace assignments
 
