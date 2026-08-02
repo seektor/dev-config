@@ -17,6 +17,18 @@ After stowing, open tmux and press `Prefix + I` to install plugins.
 | `catppuccin/tmux#v2.1.3` | Catppuccin Mocha status bar theme |
 | `tmux-plugins/tmux-resurrect` | Save and restore sessions manually |
 
+### Where plugins land
+
+TPM is cloned to `~/.tmux/plugins/tpm`, but it installs plugins into
+`~/.config/tmux/plugins/` — because a config exists at the XDG path, TPM uses
+that directory instead of its default. Stow folds `~/.config/tmux` into a single
+symlink pointing at this repo, so plugin checkouts are written *inside the repo
+working tree*.
+
+That directory is gitignored. TPM owns it; `Prefix + I` repopulates it on a new
+machine. Don't commit plugin checkouts there — doing so records them as gitlinks
+with no `.gitmodules`, which clones as empty directories.
+
 ## Prefix key
 
 `Ctrl+a`
