@@ -1,1 +1,4 @@
 my-bookmarks-manager/.config/my-bookmarks-manager/bookmarks
+
+# TPM installs plugins here (via the stow symlink), so git stays out of it
+tmux/.config/tmux/plugins/
